@@ -54,12 +54,18 @@ export default {
         axios.put(`products/${product.value.id}/`, product.value)
           .then(() => {
             window.location.href = '/';
+          })
+          .catch((error) => {
+            console.error("There was an error update the products:", error);
           });
       } else {
         // Jika create, lakukan penambahan produk
         axios.post('products/', product.value)
           .then(() => {
             window.location.href = '/';
+          })
+          .catch((error) => {
+            console.error("There was an error post the products:", error);
           });
       }
     };

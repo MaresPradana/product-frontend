@@ -39,6 +39,9 @@ export default {
       axios.get('products/')
         .then(response => {
           this.products = response.data;
+        })
+        .catch(error => {
+          console.error("There was an error fetching the products:", error);
         });
     },
     deleteProduct(id) {
