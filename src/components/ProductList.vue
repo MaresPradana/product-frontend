@@ -9,7 +9,7 @@
             <th class="py-2 px-4 text-left">Name</th>
             <th class="py-2 px-4 text-left">Price</th>
             <th class="py-2 px-4 text-left">Stock</th>
-            <th class="py-2 px-4 text-right">Actions</th>
+            <th class="py-2 px-4 text-right"></th>
           </tr>
         </thead>
         <tbody>
