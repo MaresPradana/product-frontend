@@ -12,15 +12,23 @@
       <router-view />
     </main>
 
+    <!-- Reusable Component -->
+    <app-alert></app-alert>
+
     <footer>
-      <p>&copy; 2024 Product Management App</p>
+      <p>&copy; 2024 | Mares Pradana | Product Management with Vue.js</p>
     </footer>
   </div>
 </template>
 
 <script>
+import AppAlert from './components/reusable/AppAlert.vue';
+
 export default {
   name: "App",
+  components: {
+    AppAlert
+  }
 };
 </script>
 
