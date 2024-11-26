@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.VUE_APP_API_URL,
+  baseURL: process.env.NODE_ENV === 'production'
+    ? 'https://python.marespradana.my.id/api/'
+    : 'http://localhost:8000/api/',
   timeout: 10000,
 });
 

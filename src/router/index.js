@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from '../views/HomePage.vue';
 import CreateProduct from '../views/CreateProduct.vue';
 import EditProduct from '../views/EditProduct.vue';
@@ -22,7 +22,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory('/product-frontend/'),
+  history: createWebHistory(),
   routes,
 });
 
