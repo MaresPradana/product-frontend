@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <header>
-      <h1>Product Management</h1>
-      <nav>
-        <router-link to="/">Home</router-link> |
-        <router-link to="/create">Add New Product</router-link>
-      </nav>
+      <app-navigation></app-navigation>
     </header>
 
     <main>
@@ -22,18 +18,19 @@
 </template>
 
 <script>
+import AppNavigation from './components/reusable/AppNavigation.vue';
 import AppAlert from './components/reusable/AppAlert.vue';
 
 export default {
   name: "App",
   components: {
+    AppNavigation,
     AppAlert
   }
 };
 </script>
 
 <style scoped>
-/* Gaya untuk aplikasi */
 #app {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -41,27 +38,6 @@ export default {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 footer {

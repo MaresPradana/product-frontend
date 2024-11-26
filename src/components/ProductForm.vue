@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-lg mx-auto my-10 bg-white p-8 rounded-lg shadow-md">
+  <div class="max-w-lg mx-auto md:my-10 bg-white py-8 px-4 md:p-8 rounded-lg shadow-md">
     <h1 class="text-2xl font-bold mb-6 text-gray-800">{{ isEdit ? 'Edit Product' : 'Create Product' }}</h1>
 
     <form @submit.prevent="submitProduct" class="space-y-6">
